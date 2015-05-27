@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   	<title>boot-layout</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+</head>
+<body>
+	
+	<div class="container-fluid">
+		
+		<header>
+		
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<!-- Search Form -->
+				<form class="navbar-form navbar-left" role="search">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-search fa-lg"></i></span>
+						<input type="search" class="form-control" placeholder="Search for a Friends">
+					</div>
+				</form>
+					<!-- Search Form End -->
+
+					<!-- Messages Dropdown -->
+				<ul class="nav navbar-nav messages">
+						<!-- Home Link -->
+					<li><a href="/"><i class="fa fa-home fa-2x"></i></a></li>
+					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope fa-2x"></i><span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						<li><i class="fa fa-spinner fa-pulse"></i></li>
+						<li>Loaded Thru Ajax</li>
+						</ul>
+					</li>
+				</ul>
+					<!-- Messages Dropdown End-->
+
+					<!-- Notifications Dropdown -->
+				<ul class="nav navbar-nav notifications">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-bell-o fa-2x"></i><span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><i class="fa fa-spinner fa-pulse"></i></li>
+							<li>Loaded Thru Ajax</li>
+						</ul>
+					</li>
+				</ul>
+					<!-- Notification Dropdown End-->
+					
+					<!-- User Dropdown -->
+				<ul class="nav navbar-nav user">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/demouser.png" alt="user">Vinay P.<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/profile">Edit Profile</a></li>
+							<li><a href="/settings">Settings</a></li>
+							<li><a href="/logout">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+					<!-- User Dropdown End-->
+
+					<!-- Location Link -->
+				<ul class="nav navbar-nav location">
+					<li><a href=""><i class="fa fa-location-arrow fa-2x"></i>Location</a></li>
+				</ul>
+
+			</nav>
+
+		</header>
+
+		<aside class="sidebar left hidden-xs">
+			
+		</aside>
+		<main>
+			
+		</main>
+	</div>    	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
