@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	<script type="text/javascript" src="js/modernizer.js"></script>
 </head>
 <body>
 	
@@ -329,8 +330,15 @@
 					</div>
 					<div class="col-md-4 hidden-xs">
 						<aside class="sidebar right">
-							
-						Grenade knife wonton soup cyber-Chiba vinyl post-marketing. Weathered courier urban 8-bit crypto-cardboard pen market drone chrome. Market cyber-advert Tokyo dead plastic saturation point dolphin refrigerator face forwards range-rover nodal point soul-delay. Shibuya weathered monofilament fluidity futurity beef noodles sensory. Apophenia pen 3D-printed nodal point numinous denim artisanal. Cartel fluidity San Francisco computer skyscraper voodoo god alcohol dolphin geodesic realism city wonton soup hacker rifle wristwatch.
+							<div class="panel panel-default">
+								<div class="panel-heading"><h3 class="panel-title">Current Location</h3></div>
+							  <div class="panel-body" id="location-map">
+							    
+							  </div>
+							  <div class="panel-footer" id="location-info">
+							  	
+							  </div>
+							</div>
 						</aside> 
 					</div>
 				</div>
@@ -340,5 +348,7 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
