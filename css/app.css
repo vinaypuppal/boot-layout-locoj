@@ -1,5 +1,5 @@
 body{
-  background-color: #F1F1F1;
+  background-color: #ecf0f1;
 }
 
 /*----------- NAvBAR-----------------*/
@@ -91,13 +91,95 @@ background-color: transparent;
 
 /*------------sidebar left------------*/
 
-aside.sidebar.left{
+aside.sidebar{
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 260px;
-  background-color: white;
   height: 100%;
+}
+
+.sidebar.left{
+  top: 0;
+  left:0;
+  background-color: white;
+  width: 260px;
+}
+
+aside.sidebar .logo{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2879FE;
+}
+aside.sidebar .logo a>img{
+  height: 100%;
+  width: 100%;
+}
+aside.sidebar .sidebar-body{
+  margin-top: 60px;
+  
+}
+
+aside.sidebar .sidebar-body .sidebar-user .profile-pic img{
+ width: 100px;
+}
+
+aside.sidebar .sidebar-body .sidebar-user .info{
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  height: 100px;
+}
+
+aside.sidebar .sidebar-body .sidebar-user .info p{
+  padding: 0;
+  margin: 0;
+}
+
+aside.sidebar .sidebar-body .sidebar-user .info .fa{
+  color: grey;
+  font-size: 15px;
+}
+
+aside.sidebar .sidebar-body .menu{
+  border-top: 1px solid rgba(244,244,244,.8);
+  margin-top: 5px;
+}
+
+aside.sidebar .sidebar-body .menu .list-group .list-group-item{
+  padding: 30px 15px;
+  font-size: 20px;
+}
+
+aside.sidebar .sidebar-body .menu .list-group .list-group-item:first-child{
+  border-top: none;
+  border-radius: 0;
+}
+
+aside.sidebar .sidebar-body .menu .list-group .list-group-item:last-child{
+  border-bottom: none;
+  border-radius: 0
+}
+
+aside.sidebar .sidebar-footer{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color:#2879FE;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+aside.sidebar .sidebar-footer a{
+  color: white;
+  font-weight: 700;
+}
+
+aside.sidebar .footer a:hover{
+  text-decoration: underline;  
 }
 
 /*------------main---------------------*/
@@ -106,4 +188,146 @@ main{
   margin-left: 270px;
   margin-top: 70px;
 }
+
+.center{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.panel-default .panel-heading{
+  background-color: #2879FE;
+  color: white;
+  height: 50px;
+}
+
+
+
+
+.panel-default.post-status .panel-body{
+  margin: 0;
+  padding:0;
+}
+
+.panel-title{
+  font-size: 20px;
+}
+
+.panel-default.post-status .panel-body textarea{
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin: 0;
+  border:none;
+}
+
+.panel-footer{
+  background-color: #F5F5F5;
+  padding: 0;
+}
+
+.panel-footer.post-status-buttons a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #7f8c8d; 
+}
+
+.panel-footer.post-status-buttons a:hover{
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.panel-footer.post-status-buttons .btn{
+  padding: 4px 12px;
+}
+
+.feed .panel-heading{
+  padding: 0; 
+}
+
+.feed .panel-heading .author-img,.author-name,.share-like{
+  display: inline-block;
+}
+
+.feed .panel-heading .author-name a{
+  color: white;
+  margin:2px 10px;
+  font-weight: 700;
+}
+
+.feed .panel-heading .author-name span{
+  font-size: 12px;
+  color: #fff;
+}
+
+.feed .panel-heading .author-img a>img{
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+}
+
+.feed .panel-heading .share-like{
+  padding: 10px 15px;
+}
+
+.feed .panel-heading .share-like a{
+  color: white;
+  margin-right: 10px;
+}
+
+.feed .panel-heading .share-like a:hover{
+  color: #ccc;
+}
+
+.feed .panel-body img{
+  
+}
+
+.view-all-comments {
+  display: block;
+  padding: 3px 5px;
+  background: #fcfcfc;
+  border-top: 1px solid #efefef;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ccc;
+  width: 100%;
+}
+.comments ul{
+  margin: 0;
+  padding: 0;
+}
+.comments ul li{
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+
+.comments ul li>img{
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+.comments .comment .comment-author{
+  display: block;
+}
+.comments .comment .comment-date {
+  color: #888;
+  font-size: 12px;
+}
+.comments .comment .comment-body{
+  padding: 5px;
+}
+.clear{
+  clear: both;
+}
+/*------------sidbebar right-----------*/
+.sidebar.right{
+  top:60px;
+  right: 0;
+  width:315px;
+}
+
 
