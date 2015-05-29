@@ -34,7 +34,7 @@ body{
 }
 .navbar-default .navbar-form{
   display: block;
-  width: 600px;
+  width: 550px;
   height: 100%;
   margin:0;
   padding: 0;
@@ -160,6 +160,10 @@ aside.sidebar .sidebar-body .menu .list-group .list-group-item:last-child{
   border-radius: 0
 }
 
+aside.sidebar .sidebar-body .menu .list-group .list-group-item.active{
+  background-color: #2879ef;
+}
+
 aside.sidebar .sidebar-footer{
   position: absolute;
   bottom:0;
@@ -186,7 +190,7 @@ aside.sidebar .footer a:hover{
 
 main{
   margin-left: 270px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .center{
@@ -328,7 +332,6 @@ main{
   top:60px;
   right: 0;
   width:315px;
-  padding: 10px;
 }
 
 .sidebar.right .panel-default .panel-body{
@@ -344,4 +347,73 @@ main{
 }
 
 
+/*------------Profile page----------------*/
 
+    /*--------main content-----------*/
+.list-unstyled li{
+  padding: 10px;
+}
+
+.profile-card{
+  margin-top: 120px;
+}
+
+.profile-card .profile-card-icon{
+  width: 50%;
+  margin-left: 25%;
+  height: 120px;
+  margin-top: -110px;
+  margin-bottom: 20px;
+  display: block;
+  background-color: #2879fe;
+  border: 1px solid #2878ff;
+  text-align: center;
+  line-height: 120px;
+}
+
+.profile-card .profile-card-icon .fa{
+  font-size: 64px;
+  color: white;
+  vertical-align: middle;
+}
+
+#friends input[type="search"]{
+  display: none;
+  display:inline-block;
+  border: none;
+  height: 30px;
+  width: 200px;
+}
+
+#friends .row{
+  margin-top: 10px;
+}
+
+.demo-user{
+  height: 50px;width: 50px;
+  border-radius: 50%;
+}
+
+.profile-icons {
+  font-size: 14px;
+  font-weight: 700;
+  color: #efefef;
+}
+
+#friends .panel-heading{
+  padding: 0;
+  height: 70px; 
+}
+
+#friends .media{
+  padding:10px;
+}
+
+#friends .panel-footer{
+  padding: 5px;
+  height: 40px; 
+}
+
+.profile-right-side .panel-body{
+  height: 300px;
+}

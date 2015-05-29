@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   	<title>profile-layout</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	<script type="text/javascript" src="js/modernizer.js"></script>
+</head>
+<body>
+	
+	<div class="container-fluid">
+		
+		<header>
+				
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+							<!-- Search Form -->
+						<form class="navbar-form navbar-left visible-lg-block" role="search">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-search fa-lg"></i></span>
+								<input type="search" class="form-control" placeholder="Search for a Friends">
+							</div>
+						</form>
+							<!-- Search Form End -->
+
+							<!-- Messages Dropdown -->
+						<ul class="nav navbar-nav messages">
+								<!-- Home Link -->
+							<li><a href="/"><i class="fa fa-home fa-2x"></i></a></li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope fa-2x"></i><span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+								<li><i class="fa fa-spinner fa-pulse"></i></li>
+								<li>Loaded Thru Ajax</li>
+								</ul>
+							</li>
+						</ul>
+							<!-- Messages Dropdown End-->
+
+							<!-- Notifications Dropdown -->
+						<ul class="nav navbar-nav notifications">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-bell-o fa-2x"></i><span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><i class="fa fa-spinner fa-pulse"></i></li>
+									<li>Loaded Thru Ajax</li>
+								</ul>
+							</li>
+						</ul>
+							<!-- Notification Dropdown End-->
+							
+							<!-- User Dropdown -->
+						<ul class="nav navbar-nav user">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/demouser.png" alt="user">Vinay P.<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/profile">Edit Profile</a></li>
+									<li><a href="/settings">Settings</a></li>
+									<li><a href="/logout">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+							<!-- User Dropdown End-->
+
+							<!-- Location Link -->
+						<ul class="nav navbar-nav location">
+							<li><a href=""><i class="fa fa-location-arrow fa-2x"></i><span id="location-name">Location</span></a></li>
+						</ul>
+
+					</nav>
+
+				</header>
+
+
+		<aside class="sidebar left hidden-xs">
+			<div class="logo">
+				<a href="/"><img src="images/logo.svg" alt="logo"></a>
+			</div>
+			<div class="sidebar-body">
+				<div class="sidebar-user clearfix">
+					<div class="profile-pic pull-left">
+						<img src="images/demouser.png" alt="profilepic">
+					</div>
+					<div class="info pull-left">
+						<a href="/profile">Vinay P.</a>
+						<p><i class="fa fa-users fa-lg"></i> 0</p>
+						<p><i class="fa fa-image fa-lg"></i> 0</p>
+						<p><i class="fa fa-video-camera fa-lg"></i> 0</p>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="list-group">
+					  <a href="" class="list-group-item active">
+					    <i class="fa fa-user fa-lg"></i>Profile
+					  </a>
+					  <a href="/loops" class="list-group-item"><i class="fa fa-random fa-lg"></i>
+					  Loops
+					  </a>
+					  <a href="/places" class="list-group-item"><i class="fa fa-paw fa-lg"></i> Places
+					  </a>
+					  <a href="/events" class="list-group-item">
+					  	<i class="fa fa-calendar fa-lg"></i>  Events
+					  </a>
+					  <a href="#" class="list-group-item"><i class="fa fa-question fa-lg"></i>
+					  Help
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-footer">
+				<a href="/privacy">Privacy</a> . 
+				<a href="/terms">Terms</a> . 
+				<a href="/cookies">Cookies</a>
+				<p>Locoj &copy; 2015</p>
+			</div>
+		</aside>
+
+		<main>
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-md-7 col-xs-12">
+
+						<div class="profile">
+							<div role="tabpanel">
+
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#timeline" aria-controls="timeline" role="tab" data-toggle="tab">Timeline</a></li>
+									<li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+									<li role="presentation"><a href="#friends" aria-controls="friends" role="tab" data-toggle="tab">Friends</a></li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+										<!-- timeline tab -->
+									<div role="tabpanel" class="tab-pane active" id="timeline">
+											<!--Update status  -->
+										<div class="panel panel-default post-status">
+											<div class="panel-heading">
+												<h3 class="panel-title">Whats Up?</h3>
+											</div>
+											<div class="panel-body">
+												<textarea name="update-status" id="update-status" placeholder="Share your thoughts..."></textarea>
+											</div>
+											<div class="panel-footer post-status-buttons">
+												<a href="#"><i class="fa fa-map-marker fa-lg"></i></a>
+												<a href="#"><i class="fa fa-image fa-lg"></i></a>
+												<a href="#"><i class="fa fa-video-camera fa-lg"></i></a>
+												<div class="pull-right"><button type="button" class="btn btn-primary">Post</button>
+												</div>
+											</div>
+										</div>
+											<!--Update Status End-->
+											
+											<!-- Feed -->
+										<div class="panel panel-default feed">
+											<div class="panel-heading">
+												<div class="author-img">
+													<a href=""><img src="images/demouser.png" alt="author-img"></a>
+												</div>
+												<div class="author-name">
+													<a href="/profile">Vinay P.</a>
+													<span>on 15th May 2015</span>
+												</div>
+												<div class="share-like pull-right">
+													<a href=""><i class="fa fa-thumbs-o-up fa-2x"></i></a>
+													<a href=""><i class="fa fa-share fa-2x"></i></a>
+												</div>
+											</div>
+											<div class="panel-body">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sapiente quis amet nisi cum id maxime vel adipisci numquam sed enim at quia quae, officiis rem! Architecto nostrum modi voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque commodi at, sint rem, cum ad veritatis esse, consequuntur sapiente ex ipsum pariatur impedit modi laborum! Eos, eum nulla optio!
+											</div>
+											<div class="view-all-comments">
+												<a href="">
+													<i class="fa fa-comment fa-lg"></i> view all
+												</a>
+												10 comments
+											</div>
+											<div class="panel-footer">
+												<div class="comments">
+													<ul>
+														<li>
+															<img class="pull-left" src="images/demouser.png" alt="img">
+															<div class="comment">
+																<a href="" class="comment-author">Vinay P.</a>
+																<span class="comment-date">15 May</span>
+																<div class="comment-body clear">This is a comment</div>
+															</div>
+														</li>
+														<li>
+															<img class="pull-left" src="images/demouser.png" alt="img">
+															<div class="comment">
+																<a href="" class="comment-author">Vinay P.</a>
+																<span class="comment-date">15 May</span>
+																<div class="comment-body clear">This is another comment</div>
+															</div>
+														</li>
+														<li>
+															<img class="pull-left" src="images/demouser.png" alt="img">
+															<div class="comment">
+																<a href="" class="comment-author">Vinay P.</a>
+																<span class="comment-date">15 May</span>
+																<div class="comment-body clear">This is another comment</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="input-group">
+												  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-image fa-lg"></i></span>
+												  <input type="text" class="form-control" placeholder="comment..." aria-describedby="basic-addon1">
+												</div>
+											</div>
+										</div>
+											<!-- Feed End -->
+									</div>
+										<!-- timeline tab end -->
+
+										<!-- about tab start -->
+									<div role="tabpanel" class="tab-pane" id="about">
+										<div class="panel panel-default">
+										  <div class="panel-heading">
+										    <h3 class="panel-title"><i class="fa fa-user fa-lg"></i> About</h3>
+										  </div>
+										  <div class="panel-body">
+										    <ul class="list-unstyled profile-about">
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Name</span>
+											    		</div>
+											    		<div class="col-sm-8">Vinay Puppal</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Date of Birth</span>
+											    		</div>
+											    		<div class="col-sm-8">12 January 1994</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Gender</span>
+											    		</div>
+											    		<div class="col-sm-8">Male</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Job</span>
+											    		</div>
+											    		<div class="col-sm-8">Front End Developer</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Lives in</span>
+											    		</div>
+											    		<div class="col-sm-8">Hyderabad</div>
+											    	</div>
+										    	</li>
+										    </ul>
+										  </div>
+										</div>
+										<div class="panel panel-default profile-card">
+										  <div class="panel-body">
+										   <div class="profile-card-icon">
+                                			<i class="fa fa-graduation-cap"></i>
+                            				</div>
+                            				<h4 class="text-center">Graduation Details</h4>
+                            				<ul class="list-unstyled">
+                            					<li>
+                            						<div class="row">
+                            							<div class="col-sm-3"><span class="text-muted">School</span>
+                            							</div>
+                            							<div class="col-sm-6">St.Martins High School</div>
+                            							<div class="col-sm-3">2009</div>
+                            						</div>
+                            					</li>
+                            					<li>
+                            						<div class="row">
+                            							<div class="col-sm-3"><span class="text-muted">High School</span>
+                            							</div>
+                            							<div class="col-sm-6">FIITJEE</div>
+                            							<div class="col-sm-3">2012</div>
+                            						</div>
+                            					</li>
+                            					<li>
+                            						<div class="row">
+                            							<div class="col-sm-3"><span class="text-muted">University</span>
+                            							</div>
+                            							<div class="col-sm-6">GGU</div>
+                            							<div class="col-sm-3">2016</div>
+                            						</div>
+                            					</li>
+                            				</ul>
+										  </div>
+										</div>
+										<div class="panel panel-default profile-card">
+										  <div class="panel-body">
+										   <div class="profile-card-icon">
+                                			<i class="fa fa-globe"></i>
+                            				</div>
+                            				<h4 class="text-center">Contact Details</h4>
+                            				<ul class="list-unstyled">
+                            					<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">City</span>
+											    		</div>
+											    		<div class="col-sm-8">Hyderabad</div>
+											    	</div>
+										    	</li>
+												<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">State</span>
+											    		</div>
+											    		<div class="col-sm-8">Telangana</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Phone</span>
+											    		</div>
+											    		<div class="col-sm-8">7898385269</div>
+											    	</div>
+										    	</li>
+										    	<li>
+											    	<div class="row">
+											    		<div class="col-sm-4"><span class="text-muted">Email</span>
+											    		</div>
+											    		<div class="col-sm-8">puppalvinay@gmail.com</div>
+											    	</div>
+										    	</li>
+                            				</ul>
+										  </div>
+										</div>
+									</div>
+										<!-- about tab end -->
+
+										<!-- Friends tab start -->
+									<div role="tabpanel" class="tab-pane" id="friends">
+										<!-- Single button -->
+										<form class="form-inline">
+											<div class="form-group">
+											    <label for="exampleInputName2">Filter: </label>
+											    <select class="form-control">
+											      <option>All</option>
+											      <option>Friends of Friends</option>
+											      <option>Search</option>
+											    </select>
+											    <input type="search" placeholder="Search Friends">
+											</div>
+										</form>	  
+										
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="panel panel-default">
+												  <div class="panel-heading">
+												    <div class="media">
+												      <div class="media-left">
+												        <a href="#">
+												          <img class="demo-user media-object" src="images/demouser.png" height="50" width="50" alt="...">
+												        </a>
+												      </div>
+												      <div class="media-body">
+												        <h4 class="media-heading">Afrid S.</h4>
+												        <div class="profile-icons">
+												        	<span><i class="fa fa-users"></i> 372</span> <span><i class="fa fa-photo"></i> 43</span> <span><i class="fa fa-video-camera"></i> 3 </span>
+												        </div>
+												      </div>
+												    </div>
+												  </div>
+												  <div class="panel-body">
+												    Common Friends
+												    <div class="friens-thumnails">
+												    	<img src="http://lorempixel.com/50/50/people/1" alt="">
+												    	<img src="http://lorempixel.com/50/50/people/2" alt="">
+												    	<img src="http://lorempixel.com/50/50/people/3" alt="">
+												    </div>
+												  </div>
+												  <div class="panel-footer">
+												  	<a class="btn btn-default btn-sm pull-right" href="#">Follow
+												  	  <i class="fa fa-share"></i></a>
+												  </div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="panel panel-default">
+												  <div class="panel-heading">
+												    <div class="media">
+												      <div class="media-left">
+												        <a href="#">
+												          <img class="demo-user media-object" src="images/demouser.png" height="50" width="50" alt="...">
+												        </a>
+												      </div>
+												      <div class="media-body">
+												        <h4 class="media-heading">Prabhat P.</h4>
+												        <div class="profile-icons">
+												        	<span><i class="fa fa-users"></i> 372</span> <span><i class="fa fa-photo"></i> 43</span> <span><i class="fa fa-video-camera"></i> 3 </span>
+												        </div>
+												      </div>
+												    </div>
+												  </div>
+												  <div class="panel-body">
+												    No Common Friends
+												    
+												  </div>
+												  <div class="panel-footer">
+												  	<a class="btn btn-default btn-sm pull-right" disabled="disabled" href="#">Following
+												  	  <i class="fa fa-share"></i></a>
+												  </div>
+												</div>
+											</div>
+										</div>
+									</div>
+										<!-- friends tab end -->
+								</div>
+									<!-- tab panes content end -->
+							</div>
+								<!-- tab panel end -->
+						</div>
+							<!-- profile div end -->
+					</div>
+
+					<div class="col-md-5 profile-right-side">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Title</h3>
+						  </div>
+						  <div class="panel-body">
+						    <i class="fa fa-spinner fa-pulse"></i>Loading....
+						  </div>
+						</div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Title</h3>
+						  </div>
+						  <div class="panel-body">
+						    <i class="fa fa-spinner fa-pulse"></i>Loading....
+						  </div>
+						</div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Title</h3>
+						  </div>
+						  <div class="panel-body">
+						   <i class="fa fa-spinner fa-pulse"></i>Loading....
+						  </div>
+						</div>
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <h3 class="panel-title">Title</h3>
+						  </div>
+						  <div class="panel-body">
+						   <i class="fa fa-spinner fa-pulse"></i>Loading....
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>    	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
