@@ -56,12 +56,12 @@ jQuery(document).ready(function($) {
 			console.log(latlng);
 			geocoder.geocode({'latLng': latlng}, function(results, status){
 				if(status == google.maps.GeocoderStatus.OK){
-					if(results[1]){
+					if(results){
 						infowindow.setContent(results[0].formatted_address);
 	        			infowindow.open(locationMap, marker);
-	        			var area = (results[3].formatted_address).split(',');
-	        			console.log(area[0]);
-	        			elLocName.textContent = area[0];
+	        			var area = (results[0].formatted_address).split(',');
+	        			console.log(area[2]);
+	        			elLocName.textContent = area[2].trim();
 	        		}else{
 	        			alert('No results found');
 	        		}
@@ -72,10 +72,10 @@ jQuery(document).ready(function($) {
 		}else{
 			geocoder.geocode({'latLng': latlng}, function(results, status){
 				if(status == google.maps.GeocoderStatus.OK){
-					if(results[1]){
-						var area = (results[3].formatted_address).split(',');
-						console.log(area[0]);
-						elLocName.textContent = area[0];
+					if(results){
+						var area = (results[0].formatted_address).split(',');
+						console.log(area[2]);
+						elLocName.textContent = area[2].trim();
 					}else{
 						alert('No results found');
 					}
