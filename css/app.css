@@ -417,3 +417,28 @@ main{
 .profile-right-side .panel-body{
   height: 300px;
 }
+
+
+/*----------events.html-------------*/
+.events .list-group-item{
+ padding: 10px 5px;
+ font-size: 14px;
+ font-weight: 400;
+ padding-left: 0;
+}
+
+.events .list-group-item .fa{
+  width: 50px;
+  font-size: 22px;
+  vertical-align: middle;
+  text-align: center;
+  color: gray;
+}
+
+#events-createdByU .center{
+  width: 30%;
+}
+
+.input-group{
+  padding: 10px;
+}

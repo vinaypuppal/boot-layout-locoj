@@ -9,6 +9,7 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker-bs3.css" />
 	<link rel="stylesheet" type="text/css" href="css/app.css"/>
 	<script type="text/javascript" src="js/modernizer.js"></script>
 </head>
@@ -127,13 +128,131 @@
 
 				<div class="row">
 
-					<div class="col-md-12 col-xs-12">
+					
 
-						<div class="center timeline">
-							
+						<div class="col-md-7 col-xs-12">
+
+							<div class="events">
+								<div role="tabpanel">
+
+									<!-- Nav tabs -->
+									<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#events" aria-controls="events" role="tab" data-toggle="tab">Events</a></li>
+										<li role="presentation"><a href="#create-events" aria-controls="create-events" role="tab" data-toggle="tab">Creat An Events</a></li>
+										<li role="presentation"><a href="#events-createdByU" aria-controls="events-createdByU" role="tab" data-toggle="tab">Created By U</a></li>
+									</ul>
+
+									<!-- Tab panes -->
+									<div class="tab-content">
+											<!-- events tab -->
+										<div role="tabpanel" class="tab-pane active" id="events">
+											<div class="panel panel-default">
+													<div class="panel-heading">
+													  <h3 class="panel-title">Event title</h3>
+													</div>
+													<ul class="list-group">
+														<li class="list-group-item">
+															<i class="fa fa-globe"></i>
+															Hyderabad
+														</li>
+														<li class="list-group-item">
+															<i class="fa fa-calendar-o"></i>
+															31 June 2015
+														</li>
+														<li class="list-group-item">
+															<i class="fa fa-clock-o"></i>
+															10:00 AM
+														</li>
+														<li class="list-group-item">
+															<i class="fa fa-users"></i>
+															2 Attendees
+															<a class="btn btn-primary btn-xs pull-right">Attend</a>
+														</li>
+													</ul> 
+													<div class="panel-body">
+													   <img src="http://www.lorempixel.com/100/100/people/1" alt="thumbnail">
+													   <img src="http://www.lorempixel.com/100/100/people/2" alt="thumbnail">
+													</div>
+												</div>	
+											
+										</div>
+											<!-- events tab end -->
+
+											<!-- create-events tab start -->
+										<div role="tabpanel" class="tab-pane fuelux" id="create-events">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h3 class="panel-title">Fill the Form to create an Event</h3>
+												</div>
+												<div class="panel-body">
+													<form action="/event">
+														<div class="input-group">
+														  <span class="input-group-addon" id="basic-addon1">Event Name</span>
+														  <input type="text" class="form-control" placeholder="Example:Quiz" aria-describedby="basic-addon1">
+														</div>
+														<div class="input-group">
+														<span class="input-group-addon" id="basic-addon2">Date & Time</span>
+														  <input type="text" name="daterange" placeholder="Start:date,time End:date,time " class="form-control"/>
+														</div>
+														<div class="input-group">
+														  <span class="input-group-addon" id="basic-addon1">Location</span>
+														  <input type="text" class="form-control" placeholder="city" aria-describedby="basic-addon1">
+														</div>
+														<a href="" class="btn btn-primary btn-xs pull-right">Create</a>
+													</form>
+												</div>
+											</div>
+										</div>
+											<!-- create-events tab end -->
+
+											<!-- attended-events tab start -->
+										<div role="tabpanel" class="tab-pane" id="events-createdByU">
+											<div class="center"><i class="fa fa-spinner fa-spin fa-4x"></i></div>
+										</div>
+											<!-- friends tab end -->
+									</div>
+										<!-- tab panes content end -->
+								</div>
+									<!-- tab panel end -->
+							</div>
+							<!-- events div end -->
+						</div>
+						<div class="col-md-5 profile-right-side">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Title</h3>
+								</div>
+								<div class="panel-body">
+									<i class="fa fa-spinner fa-pulse"></i>Loading....
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Title</h3>
+								</div>
+								<div class="panel-body">
+									<i class="fa fa-spinner fa-pulse"></i>Loading....
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Title</h3>
+								</div>
+								<div class="panel-body">
+									<i class="fa fa-spinner fa-pulse"></i>Loading....
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Title</h3>
+								</div>
+								<div class="panel-body">
+									<i class="fa fa-spinner fa-pulse"></i>Loading....
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+
 			</div>
 		</main>
 	</div>    	
@@ -141,6 +260,8 @@
    <script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

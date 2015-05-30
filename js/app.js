@@ -85,5 +85,11 @@ jQuery(document).ready(function($) {
 			});
 		}
 	}
-
+	$('input[name="daterange"]').daterangepicker({
+	        timePicker: true,
+	        format: 'MM/DD/YYYY h:mm A',
+	        timePickerIncrement: 30,
+	        timePicker12Hour: true,
+	        timePickerSeconds: false
+	    });
 });
