@@ -442,3 +442,95 @@ main{
 .input-group{
   padding: 10px;
 }
+
+#create-events .input-group .input-group-addon{
+  background-color: #2379f3;
+  color: white;
+  font-size: 16px;
+}
+
+
+/*----------messages-page-------------*/
+
+.messages-container{
+  padding: 10px;
+}
+
+.messages-container .messages-list{
+  width: 300px;
+}
+.messages-container .messages-list .list-group{
+  overflow:auto;
+  height: 550px;
+ }
+.messages-container .messages-list .list-group-item a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.messages-container .messages-list .list-group-item.active .media-body {
+  color: #fff;
+}
+.messages-container .messages-list .list-group-item .media-body .date {
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: .4;
+}
+
+.messages-container .messages-list .list-group-item .media-body .user {
+  font-weight: 500;
+}
+
+.messages-container .messages-list .list-group-item .media-body .message {
+  opacity: .8;
+}
+
+.messages-container .messages .messages-panel{
+  height: 550px;
+  background-color: white;
+  padding: 10px;
+}
+
+.messages-container .messages .messages-panel .messages-body{
+  height: 400px;
+  overflow: auto;
+}
+
+.messages-container .messages .messages-panel .messages-footer{
+  height: 130px;
+  background-color: white;
+}
+
+.messages-container .messages .messages-body .panel-heading{
+  background-color: white;
+  color: #707070;
+}
+
+.messages-container .messages .messages-body .media-object a img{
+  box-shadow: 0 5px 1px #ddd;
+  margin-bottom: 10px;
+}
+
+.messages-container .messages .messages-body .media:nth-child(even){
+  margin-left: 50px;
+}
+
+.messages-container .messages .messages-body .media:nth-child(odd){
+  margin-right: 50px;
+}
+
+.messages-footer .panel-body{
+  padding: 0;
+  height: 100px;
+}
+
+.messages-footer .panel-body textarea{
+  width: 100%;
+  height: inherit;
+}
+
+.messages-footer .panel-footer{
+  height: 30px;
+  padding: 5px;
+} 
