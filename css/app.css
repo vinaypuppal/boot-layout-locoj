@@ -449,6 +449,14 @@ main{
   font-size: 16px;
 }
 
+.placepicker-map {
+  min-height: 250px
+}
+
+#map-btn{
+  background-color: #f37923;
+  color: white;
+}
 
 /*----------messages-page-------------*/
 

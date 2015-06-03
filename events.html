@@ -194,9 +194,11 @@
 														<span class="input-group-addon" id="basic-addon2">Date & Time</span>
 														  <input type="text" name="daterange" placeholder="Start:date,time End:date,time " class="form-control"/>
 														</div>
-														<div class="input-group">
-														  <span class="input-group-addon" id="basic-addon1">Location</span>
-														  <input type="text" class="form-control" placeholder="city" aria-describedby="basic-addon1">
+														<div class="form-group">
+														  <input class="placepicker form-control" data-map-container-id="collapseOne"/>
+														</div>
+														<div id="collapseOne" class="collapse">
+														  <div class="placepicker-map thumbnail"></div>
 														</div>
 														<a href="" class="btn btn-primary  pull-right">Create</a>
 													</form>
@@ -262,6 +264,7 @@
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
 	<script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/2.9.0/moment.min.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/1/daterangepicker.js"></script>
+	<script type="text/javascript" src="js/jquery.placepicker.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

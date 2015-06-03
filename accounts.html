@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   	<title>boot-layout</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/formValidation.min.css">
+	<!-- Include Bootstrap Datepicker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/accounts.css"/>
+	<script type="text/javascript" src="js/modernizer.js"></script>
+</head>
+<body>
+	
+	<header class="logo">
+		<img src="images/transperent-logo.svg" alt="logo">
+		<h1>LOCOJ</h1>
+		<span>Locals Connecting Junction</span>
+	</header>	
+	
+	<div class="login panel panel-default">
+		<div class="row links">
+			<div class="col-md-6 text-center">
+				<a id="signinFormLink" href="" class="active">Login</a>
+			</div>
+			<div class="col-md-6 text-center">
+				<a id="signupFormLink" href="">Register</a>
+			</div>
+		</div>
+		<hr>
+		<div class="panel-body">
+		   <form id="signinForm" action="/login" method="post" name="signinForm">
+			   <div class="form-group">
+			   		<div class="input-group input-group-lg">
+			   		  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+			   		  <input type="text" class="form-control" placeholder="Email" name="email" aria-describedby="basic-addon1">
+			   		</div>
+			   </div>
+			   	<div class="form-group">
+			   		<div class="input-group input-group-lg">
+			   		  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+			   		  <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="basic-addon1">
+			   		</div>
+			   	</div>
+			   	<div id="remember-forgot">
+			   		<div class="checkbox pull-left">
+			   		    <label>
+			   		      <input type="checkbox"> <strong>Remember Me</strong>
+			   		    </label>
+			   		  </div>
+					<a class="pull-right" href="">Forgot Password?</a>
+			 		
+			   	</div>
+			   	<div class="clearfix"></div>
+			   	<div class="pull-right">
+			   		<button type="submit" class="btn btn-default">Sign in</button>
+			   	</div>
+		   </form>
+		  <form id="signupForm" action="/login" method="post" name="signupForm">
+			   <div class="form-group">
+			   		<div class="input-group input-group-lg">
+			   		  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+			   		  <input type="text" class="form-control" placeholder="Email" name="email" aria-describedby="basic-addon1">
+			   		</div>
+			   </div>
+			   	<div class="form-group">
+			   		<div class="input-group input-group-lg">
+			   		  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+			   		  <input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="basic-addon1">
+			   		</div>
+			   	</div>
+			   	<div class="form-group">
+			   		<div class="input-group input-group-lg">
+			   		  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+			   		  <input type="password" class="form-control" placeholder="Re-Password" name="confirmPassword" aria-describedby="basic-addon1">
+			   		</div>
+			   	</div>
+			   	<div class="form-group">
+			   		<div class="input-group date">
+			   		<span class="input-group-addon">Date Of Birth</span>
+			   		  <input type="text" class="form-control" name="dob" placeholder="dd/mm/yyyy">
+			   		</div>			   			   		
+			   	</div>
+			   	<div class="form-group">
+			   	      <select name="gender" class="form-control">
+			   	      	<option value="default">Gender</option>
+			   	        <option value="male">Male</option>
+			   	        <option value="female">Female</option>
+			   	      </select>
+			   	  </div>
+			   	  <div class="form-group">
+			   	  	<label class="col-xs-3 control-label">Captcha</label>
+			   	  	<div class="col-xs-8">
+			   	  		<!-- The captcha container -->
+			   	  		<div id="captchaContainer"></div>
+			   	  	</div>
+			   	  </div>
+			   	  <div class="pull-right">
+			   	  	<button type="submit" class="btn btn-default">Sign up</button>
+			   	  </div>
+		   </form>
+		</div>
+	</div>
+
+	<footer>
+		<a href="/privacy">Privacy</a> . 
+		<a href="/terms">Terms</a> . 
+		<a href="/cookies">Cookies</a>
+		<p>Locoj &copy; 2015</p>
+	</footer>
+	
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/formValidation.min.js"></script>
+<script type="text/javascript" src="js/formValidationbootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/reCaptcha2.min.js"></script>
+<script type="text/javascript" src="js/accounts.js"></script>
+</body>

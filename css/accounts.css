@@ -1,0 +1,132 @@
+/*@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,700);
+*/
+
+body{
+	background: url('../images/map.jpg') no-repeat;
+	background-size: cover;
+	font-weight: 500;
+	font-family: 'Raleway', Arial, sans-serif; 
+}
+
+header.logo{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header.logo img{
+	width: 200px;
+}
+
+header.logo h1{
+	font-size: 80px;
+	color: white;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+}
+
+header.logo span{
+	color:#C0C5CC;
+	font-size: 30px;
+}
+
+.login.panel{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+	min-height: 300px;
+	margin-bottom: 30px;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 700;
+  color: grey;
+}
+
+.links a:not(.active):hover{
+	color: #23c3cc;
+}
+
+.links a.active{
+	color: #23c379;
+	cursor: default;
+}
+.login.panel{
+	padding: 10px;
+}
+.login.panel hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+.login.panel .panel-body form .input-group{
+	padding: 10px;
+}
+
+.login.panel .panel-body form .input-group .input-group-addon{
+	background-color: transparent;
+}
+
+.login.panel .panel-body form .input-group .input-group-addon .fa{
+	font-size: 20px;
+}
+.login.panel .panel-body form .input-group input{
+border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.login.panel .panel-body form .input-group input:hover,
+.login.panel .panel-body form .input-group input:focus{
+
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+#remember-forgot{
+	padding: 10px;
+}
+
+#remember-forgot .checkbox{
+	margin-top: 1px;
+}
+
+#signupForm{
+	display: none;
+}
+
+select.form-control{
+	width: 95%;
+	margin:auto;
+}
+
+.signup{
+	padding: 10px;
+}
+
+.agree{
+	padding: 10px;
+	color: red;
+	font-size: 12px;
+
+}
+
+footer{
+	text-align: center;
+	color: #693ACF;
+	font-weight: 800;
+}

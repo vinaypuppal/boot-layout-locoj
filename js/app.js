@@ -92,4 +92,5 @@ jQuery(document).ready(function($) {
 	        timePicker12Hour: true,
 	        timePickerSeconds: false
 	    });
+	$(".placepicker").placepicker();
 });
